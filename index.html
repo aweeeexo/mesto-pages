@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="/mesto-pages/assets/index-Do9xLFlG.js"></script>
+    <script type="module" crossorigin src="/mesto-pages/assets/index-BYEmbXC4.js"></script>
     <link rel="stylesheet" crossorigin href="/mesto-pages/assets/index-HXpjGZ77.css">
   </head>
   <body class="page">
@@ -18,6 +18,7 @@
           src="/mesto-pages/assets/logo-C_QQpFK1.svg"
           alt="Логотип проекта место"
           class="logo header__logo"
+          style="cursor: pointer;"
         />
       </header>
       <main class="content">
@@ -161,6 +162,14 @@
           </form>
         </div>
       </div>
+
+      <div class="popup popup_type_info">
+        <div class="popup__content">
+          <button type="button" class="popup__close"></button>
+          <h3 class="popup__title">Статистика</h3>
+        </div>
+      </div>
+
     </div>
 
 
@@ -176,6 +185,20 @@
             <button type="button" class="card__like-button"></button>
             <p class="card__like-count"></p> 
           </div>
+        </div>
+      </li>
+    </template>
+
+    <template id="popup-info-definition-template">
+      <ul class="popup__info-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px; margin-top: 20px;"></ul>
+    </template>
+
+    <template id="popup-info-user-preview-template">
+      <li class="popup__info-item" style="display: flex; align-items: center; gap: 15px;">
+        <img class="popup__info-avatar" src="" alt="" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
+        <div class="popup__info-text">
+          <h3 class="popup__info-title" style="margin: 0; font-size: 14px; max-width: 200px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;"></h3>
+          <p class="popup__info-count" style="margin: 0; font-size: 12px; color: #c4c4c4;"></p>
         </div>
       </li>
     </template>
